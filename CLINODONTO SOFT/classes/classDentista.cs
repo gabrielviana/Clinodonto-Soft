@@ -283,11 +283,31 @@ namespace CLINODONTO_SOFT.classes
             }
             return arr;
         }
-        
+        public int bucarexpediente(string id)
+        {
+            string sql = "SELECT * FROM expediente where dentista = '" + id + "';";
+            MySqlCommand commS = new MySqlCommand(sql, Conn.mConn);
+            DataTable dt = Conn.ExecuteQuery(commS);
+            return dt.Rows.Count;
+        }
+        public void criar_exp(string id)
+        {
+            string sql = "INSERT INTO expediente(dentista) VALUES('"+id+"');";
+            MySqlCommand commS = new MySqlCommand(sql, Conn.mConn);
+            try
+            {
+                Conn.ExecuteNonQuery(commS);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
         public void Salvar()
         {
             string sql = "INSERT INTO dentista(cpf,rg,orgao_expedidor,nome,cro,login,senha,tipo,endereco,telefone) VALUES(" + Cpf + "," + Rg + ",'" + Orgaoexpedidor + "','" + Nome + "','" + Cro + "','" + Login + "','" + Senha + "','" + Tipo + "','" + Endereco + "'," + Telefone + ");";
             MySqlCommand commS = new MySqlCommand(sql, Conn.mConn);
+
 
             try
             {

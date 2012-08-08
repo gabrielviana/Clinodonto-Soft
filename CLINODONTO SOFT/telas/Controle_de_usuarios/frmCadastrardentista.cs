@@ -19,7 +19,7 @@ namespace CLINODONTO_SOFT.telas.Controle_de_usuarios
         public frmCadastrardentista()
         {
             InitializeComponent();
-
+            button3.Enabled = false;
         }
         public frmCadastrardentista(string id)
         {
@@ -38,7 +38,7 @@ namespace CLINODONTO_SOFT.telas.Controle_de_usuarios
             txtTelefoneMedico.Text = ((classDentista)arr[0]).Telefone.ToString();
             txtLogin.Text = ((classDentista)arr[0]).Login;
             txtSenha.Text = ((classDentista)arr[0]).Senha;
-         
+        
             txtLogin.Enabled = false;
             txtCro.Enabled = false;
         }
@@ -49,7 +49,7 @@ namespace CLINODONTO_SOFT.telas.Controle_de_usuarios
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new frmExpediente().ShowDialog();
+            new frmExpediente(int.Parse(ID)).ShowDialog();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)
