@@ -102,9 +102,7 @@ namespace CLINODONTO_SOFT.classes
         public ArrayList bucar(string busca)
         {
             ArrayList arr = new ArrayList();
-            string sql = "SELECT * FROM paciente where nome like '%" + busca + "%' or cpf like '%" + busca + "%';" ;
-          
-          
+            string sql = "SELECT * FROM paciente where nome like '%" + busca + "%' or cpf like '%" + busca + "%';" ;    
          
             MySqlCommand commS = new MySqlCommand(sql, Conn.mConn);
             DataTable dt = Conn.ExecuteQuery(commS);

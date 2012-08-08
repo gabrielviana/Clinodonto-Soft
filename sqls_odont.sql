@@ -6,20 +6,69 @@ use odont;
 
 CREATE TABLE dentista (
 iddentista int not null auto_increment PRIMARY KEY,
-cpf varchar(15),
-rg varchar(15),
+cpf int,
+rg int,
 orgao_expedidor varchar(40),
 nome varchar(60),
 cro varchar(15),
 login varchar(40),
 senha varchar(40),
 tipo varchar(20),
-segunda_turno varchar(15),
-terca_turno varchar(15),
-quarta_turno varchar(15),
-quinta_turno varchar(15),
-sexta_turno varchar(15)
+endereco varchar(40),
+telefone int
+
+
 )engine=InnoDb;
+
+CREATE TABLE expediente(
+dentista int not null,
+
+segunda_matutino_ent datetime,
+segunda_matutino_sai datetime,
+
+segunda_vespertino_ent datetime,
+segunda_vespertino_sai datetime,
+
+segunda_noturno_ent datetime,
+segunda_noturno_sai datetime,
+
+terca_matutino_ent datetime,
+terca_matutino_sai datetime,
+
+terca_vespertino_ent datetime,
+terca_vespertino_sai datetime,
+
+terca_noturno_ent datetime,
+terca_noturno_sai datetime,
+
+quarta_matutino_ent datetime,
+quarta_matutino_sai datetime,
+
+quarta_vespertino_ent datetime,
+quarta_vespertino_sai datetime,
+
+quarta_noturno_ent datetime,
+quarta_noturno_sai datetime,
+
+quinta_matutino_ent datetime,
+quinta_matutino_sai datetime,
+
+quinta_vespertino_ent datetime,
+quinta_vespertino_sai datetime,
+
+quinta_noturno_ent datetime,
+quinta_noturno_sai datetime,
+
+sexta_matutino_ent datetime,
+sexta_matutino_sai datetime,
+
+sexta_vespertino_ent datetime,
+sexta_vespertino_sai datetime,
+
+sexta_noturno_ent datetime,
+sexta_noturno_sai datetime,
+FOREIGN KEY (dentista) references dentista(iddentista) on delete restrict
+);
 
 CREATE TABLE paciente (
 idpaciente int not null auto_increment PRIMARY KEY,

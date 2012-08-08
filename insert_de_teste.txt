@@ -1,1 +1,1 @@
-insert into dentista(nome,senha,login) values("Josiane Fagundes","123456","josi");
+insert into dentista(nome,senha,login,tipo) values("Josiane Fagundes","123456","josi","1");

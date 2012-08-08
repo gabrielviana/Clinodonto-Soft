@@ -45,15 +45,16 @@
             this.Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnProntuario
             // 
-            this.btnProntuario.Location = new System.Drawing.Point(956, 289);
+            this.btnProntuario.Location = new System.Drawing.Point(956, 295);
             this.btnProntuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProntuario.Name = "btnProntuario";
-            this.btnProntuario.Size = new System.Drawing.Size(92, 33);
+            this.btnProntuario.Size = new System.Drawing.Size(106, 36);
             this.btnProntuario.TabIndex = 20;
             this.btnProntuario.Text = "Protuário";
             this.btnProntuario.UseVisualStyleBackColor = true;
@@ -61,18 +62,18 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(39, 37);
+            this.txtbuscar.Location = new System.Drawing.Point(28, 43);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(553, 22);
+            this.txtbuscar.Size = new System.Drawing.Size(567, 22);
             this.txtbuscar.TabIndex = 18;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(598, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(601, 37);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(72, 34);
+            this.btnBuscar.Size = new System.Drawing.Size(106, 34);
             this.btnBuscar.TabIndex = 17;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -80,10 +81,10 @@
             // 
             // btnImportar
             // 
-            this.btnImportar.Location = new System.Drawing.Point(956, 251);
+            this.btnImportar.Location = new System.Drawing.Point(956, 255);
             this.btnImportar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(92, 33);
+            this.btnImportar.Size = new System.Drawing.Size(106, 36);
             this.btnImportar.TabIndex = 16;
             this.btnImportar.Text = "Importar";
             this.btnImportar.UseVisualStyleBackColor = true;
@@ -91,10 +92,10 @@
             // 
             // btnExportar
             // 
-            this.btnExportar.Location = new System.Drawing.Point(956, 211);
+            this.btnExportar.Location = new System.Drawing.Point(956, 214);
             this.btnExportar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(92, 34);
+            this.btnExportar.Size = new System.Drawing.Size(106, 37);
             this.btnExportar.TabIndex = 15;
             this.btnExportar.Text = "Exportar";
             this.btnExportar.UseVisualStyleBackColor = true;
@@ -102,10 +103,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(956, 171);
+            this.btnExcluir.Location = new System.Drawing.Point(956, 173);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(92, 34);
+            this.btnExcluir.Size = new System.Drawing.Size(106, 37);
             this.btnExcluir.TabIndex = 14;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -113,10 +114,10 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(956, 131);
+            this.btnEditar.Location = new System.Drawing.Point(956, 132);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(92, 34);
+            this.btnEditar.Size = new System.Drawing.Size(106, 37);
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -127,7 +128,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(956, 91);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(92, 34);
+            this.btnAdicionar.Size = new System.Drawing.Size(106, 37);
             this.btnAdicionar.TabIndex = 12;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -206,12 +207,24 @@
             this.Curso.ReadOnly = true;
             this.Curso.Width = 200;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(956, 593);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(111, 37);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Voltar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // frmControle_pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1074, 651);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnProntuario);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.btnBuscar);
@@ -253,5 +266,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cpf;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nascimento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Curso;
+        private System.Windows.Forms.Button button4;
     }
 }
